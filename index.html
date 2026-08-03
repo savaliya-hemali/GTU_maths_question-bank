@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GTU Mathematics — Question Bank</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="header">
+      <div class="eyebrow" id="eyebrow"></div>
+      <h1 id="titleText"></h1>
+      <div class="sub" id="subText"></div>
+    </div>
+
+    <div class="subject-toggle" id="subjectToggle"></div>
+
+    <div class="tabbar-wrap">
+      <div class="tabbar" id="tabbar"></div>
+      <div class="scroll-track">
+        <div class="scroll-thumb" id="scrollThumb"></div>
+      </div>
+    </div>
+
+    <div class="unit-card" id="unitCard"></div>
+
+    <div class="filters">
+      <div class="filter-label">Season</div>
+      <div class="filter-grid" id="seasonGrid"></div>
+      <div class="filter-label">Marks</div>
+      <div class="marks-row" id="marksRow"></div>
+      <div class="search-box">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8" />
+          <line x1="21" y1="21" x2="16.65" y2="16.65" />
+        </svg>
+        <input type="text" id="searchInput" placeholder="Search questions..." />
+      </div>
+      <div class="util-row">
+        <button class="pill-btn" id="savedBtn">
+          ⭐ Saved (<span id="savedCount">0</span>)
+        </button>
+        <button class="pill-btn" id="sortBtn">Newest first</button>
+      </div>
+    </div>
+
+    <div class="result-count" id="resultCount"></div>
+    <div class="q-list" id="qList"></div>
+  </div>
+
+  <!-- Data files (order doesn't matter between these) -->
+  <script src="data/m1-questions.js"></script>
+  <script src="data/m2-questions.js"></script>
+  <script src="data/ps-questions.js"></script>
+  <script src="data/dm-questions.js"></script>
+  <script src="meta.js"></script>
+
+  <!-- App logic (must come after data) -->
+  <script src="app.js"></script>
+</body>
+
+</html>
