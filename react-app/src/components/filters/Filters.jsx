@@ -5,22 +5,27 @@ export default function Filters({
   unit,
   season,
   marks,
+  topic,
   search,
   savedOnly,
   savedCount,
   newestFirst,
   onSeasonChange,
   onMarksChange,
+  onTopicChange,
   onSearchChange,
   onSavedToggle,
   onSortToggle,
+  customQuestions,
 }) {
+  const subjectQuestions = DATA[subject] || customQuestions?.[subject] || [];
+
   // Build sorted sessions list
   const sessions = [
-    ...new Set(DATA[subject].map((q) => q.sessionClean)),
+    ...new Set(subjectQuestions.map((q) => q.sessionClean).filter(Boolean)),
   ].sort((a, b) => {
-    const ya = parseInt(a.match(/\d+/)[0]);
-    const yb = parseInt(b.match(/\d+/)[0]);
+    const ya = parseInt(a.match(/\d+/)?.[0] || 0, 10);
+    const yb = parseInt(b.match(/\d+/)?.[0] || 0, 10);
     if (yb !== ya) return yb - ya;
     return a.startsWith("Winter") ? -1 : 1;
   });
@@ -28,9 +33,17 @@ export default function Filters({
   // Marks values for current unit
   const marksVals = [
     ...new Set(
-      DATA[subject].filter((q) => q.unit === unit).map((q) => q.marksNum)
+      subjectQuestions.filter((q) => q.unit === unit).map((q) => q.marksNum).filter(Boolean)
     ),
   ].sort((a, b) => a - b);
+
+  // Topic values for current unit (only if topics exist)
+  const topicVals = [
+    ...new Set(
+      subjectQuestions.filter((q) => q.unit === unit && q.topic).map((q) => q.topic)
+    ),
+  ].sort();
+  const hasTopics = topicVals.length > 0;
 
   return (
     <div className="filters">
@@ -52,6 +65,30 @@ export default function Filters({
           <polyline points="6 9 12 15 18 9" />
         </svg>
       </div>
+
+      {/* Topic (only shown if this unit has topics) */}
+      {hasTopics && (
+        <>
+          <div className="filter-label">Topic</div>
+          <div className="select-wrap">
+            <select
+              id="topicSelect"
+              className="season-select"
+              value={topic}
+              onChange={(e) => onTopicChange(e.target.value)}
+              aria-label="Filter by topic"
+            >
+              <option value="All">All Topics</option>
+              {topicVals.map((t) => (
+                <option key={t} value={t}>{t}</option>
+              ))}
+            </select>
+            <svg className="select-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </div>
+        </>
+      )}
 
       {/* Marks */}
       <div className="filter-label">Marks</div>
@@ -77,11 +114,21 @@ export default function Filters({
         <input
           type="search"
           id="searchInput"
-          placeholder="Search questions..."
+          placeholder="Search questions in current unit..."
           value={search}
           onChange={(e) => onSearchChange(e.target.value)}
           aria-label="Search questions"
         />
+        {search && (
+          <button
+            type="button"
+            className="filter-clear-search"
+            onClick={() => onSearchChange("")}
+            title="Clear search"
+          >
+            ✕
+          </button>
+        )}
       </div>
 
       {/* Saved + Sort */}

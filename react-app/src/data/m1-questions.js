@@ -4,6 +4,8 @@
 export const M1_QUESTIONS = [
   {
     "id": "m1-S18-1b",
+    "topic": "Applications of Definite Integrals",
+
     "unit": 1,
     "source": "Summer 2018",
     "marks": "04",
@@ -16,6 +18,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S18-1c",
+    "topic": "Applications of Definite Integrals",
+
     "unit": 1,
     "source": "Summer 2018",
     "marks": "07",
@@ -40,6 +44,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S18-1a",
+    "topic": "Indeterminate Forms & L'Hôpital's Rule",
+
     "unit": 2,
     "source": "Summer 2018",
     "marks": "03",
@@ -52,6 +58,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S18-2a",
+    "topic": "Indeterminate Forms & L'Hôpital's Rule",
+
     "unit": 2,
     "source": "Summer 2018",
     "marks": "03",
@@ -64,6 +72,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S18-2b",
+    "topic": "Taylor's & Maclaurin's Series",
+
     "unit": 2,
     "source": "Summer 2018",
     "marks": "04",
@@ -76,6 +86,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S18-3c",
+    "topic": "Indeterminate Forms & L'Hôpital's Rule",
+
     "unit": 2,
     "source": "Summer 2018",
     "marks": "07",
@@ -232,6 +244,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S19-1b",
+    "topic": "Beta & Gamma Functions",
+
     "unit": 1,
     "source": "Summer 2019",
     "marks": "04",
@@ -244,6 +258,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S19-2b",
+    "topic": "Applications of Definite Integrals",
+
     "unit": 1,
     "source": "Summer 2019",
     "marks": "04",
@@ -268,6 +284,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S19-2a-OR",
+    "topic": "Improper Integrals",
+
     "unit": 1,
     "source": "Summer 2019 OR",
     "marks": "03",
@@ -292,6 +310,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S19-2b-OR",
+    "topic": "Applications of Definite Integrals",
+
     "unit": 1,
     "source": "Summer 2019 OR",
     "marks": "04",
@@ -328,6 +348,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S19-1a",
+    "topic": "Indeterminate Forms & L'Hôpital's Rule",
+
     "unit": 2,
     "source": "Summer 2019",
     "marks": "03",
@@ -340,6 +362,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S19-2a",
+    "topic": "Indeterminate Forms & L'Hôpital's Rule",
+
     "unit": 2,
     "source": "Summer 2019",
     "marks": "03",
@@ -544,6 +568,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S22-1a",
+    "topic": "Improper Integrals",
+
     "unit": 1,
     "source": "Summer 2022",
     "marks": "02",
@@ -556,6 +582,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S22-2a",
+    "topic": "Beta & Gamma Functions",
+
     "unit": 1,
     "source": "Summer 2022",
     "marks": "03",
@@ -580,6 +608,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S22-1b",
+    "topic": "Applications of Definite Integrals",
+
     "unit": 1,
     "source": "Summer 2022",
     "marks": "04",
@@ -592,6 +622,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S22-2b",
+    "topic": "Applications of Definite Integrals",
+
     "unit": 1,
     "source": "Summer 2022",
     "marks": "04",
@@ -640,6 +672,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S22-4a",
+    "topic": "Indeterminate Forms & L'Hôpital's Rule",
+
     "unit": 2,
     "source": "Summer 2022",
     "marks": "02",
@@ -652,6 +686,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S22-3b",
+    "topic": "Taylor's & Maclaurin's Series",
+
     "unit": 2,
     "source": "Summer 2022",
     "marks": "04",
@@ -892,6 +928,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S23-1a",
+    "topic": "Improper Integrals",
+
     "unit": 1,
     "source": "Summer 2023",
     "marks": "03",
@@ -904,6 +942,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S23-1b",
+    "topic": "Applications of Definite Integrals",
+
     "unit": 1,
     "source": "Summer 2023",
     "marks": "04",
@@ -940,6 +980,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S23-2a-OR",
+    "topic": "Beta & Gamma Functions",
+
     "unit": 1,
     "source": "Summer 2023 OR",
     "marks": "03",
@@ -952,6 +994,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S23-2b-OR",
+    "topic": "Applications of Definite Integrals",
+
     "unit": 1,
     "source": "Summer 2023 OR",
     "marks": "04",
@@ -976,6 +1020,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S23-2a",
+    "topic": "Indeterminate Forms & L'Hôpital's Rule",
+
     "unit": 2,
     "source": "Summer 2023",
     "marks": "03",
@@ -988,6 +1034,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S23-3b",
+    "topic": "Taylor's & Maclaurin's Series",
+
     "unit": 2,
     "source": "Summer 2023",
     "marks": "04",
@@ -1228,6 +1276,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S24-1a",
+    "topic": "Improper Integrals",
+
     "unit": 1,
     "source": "Summer 2024",
     "marks": "03",
@@ -1240,6 +1290,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S24-1b",
+    "topic": "Beta & Gamma Functions",
+
     "unit": 1,
     "source": "Summer 2024",
     "marks": "04",
@@ -1264,6 +1316,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S24-1c",
+    "topic": "Applications of Definite Integrals",
+
     "unit": 1,
     "source": "Summer 2024",
     "marks": "07",
@@ -1276,6 +1330,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S24-2a-OR",
+    "topic": "Improper Integrals",
+
     "unit": 1,
     "source": "Summer 2024 OR",
     "marks": "03",
@@ -1288,6 +1344,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S24-2b-OR",
+    "topic": "Improper Integrals",
+
     "unit": 1,
     "source": "Summer 2024 OR",
     "marks": "04",
@@ -1324,6 +1382,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S24-2c-OR",
+    "topic": "Applications of Definite Integrals",
+
     "unit": 1,
     "source": "Summer 2024 OR",
     "marks": "07",
@@ -1348,6 +1408,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S24-2a",
+    "topic": "Indeterminate Forms & L'Hôpital's Rule",
+
     "unit": 2,
     "source": "Summer 2024",
     "marks": "03",
@@ -1360,6 +1422,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S24-3a",
+    "topic": "Taylor's & Maclaurin's Series",
+
     "unit": 2,
     "source": "Summer 2024",
     "marks": "03",
@@ -1372,6 +1436,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S24-3b",
+    "topic": "Taylor's & Maclaurin's Series",
+
     "unit": 2,
     "source": "Summer 2024",
     "marks": "04",
@@ -1528,6 +1594,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S25-1a",
+    "topic": "Beta & Gamma Functions",
+
     "unit": 1,
     "source": "Summer 2025",
     "marks": "03",
@@ -1552,6 +1620,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S25-2b",
+    "topic": "Applications of Definite Integrals",
+
     "unit": 1,
     "source": "Summer 2025",
     "marks": "04",
@@ -1588,6 +1658,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S25-2a",
+    "topic": "Indeterminate Forms & L'Hôpital's Rule",
+
     "unit": 2,
     "source": "Summer 2025",
     "marks": "03",
@@ -1600,6 +1672,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S25-3b",
+    "topic": "Taylor's & Maclaurin's Series",
+
     "unit": 2,
     "source": "Summer 2025",
     "marks": "04",
@@ -1612,6 +1686,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-S25-2b-OR",
+    "topic": "Taylor's & Maclaurin's Series",
+
     "unit": 2,
     "source": "Summer 2025 OR",
     "marks": "04",
@@ -1876,6 +1952,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W18-1c",
+    "topic": "Improper Integrals",
+
     "unit": 1,
     "source": "Winter 2018",
     "marks": "07",
@@ -1912,6 +1990,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W18-2c-OR",
+    "topic": "Applications of Definite Integrals",
+
     "unit": 1,
     "source": "Winter 2018 OR",
     "marks": "07",
@@ -1924,6 +2004,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W18-1b",
+    "topic": "Indeterminate Forms & L'Hôpital's Rule",
+
     "unit": 2,
     "source": "Winter 2018",
     "marks": "04",
@@ -1936,6 +2018,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W18-2a-OR",
+    "topic": "Taylor's & Maclaurin's Series",
+
     "unit": 2,
     "source": "Winter 2018 OR",
     "marks": "03",
@@ -2152,6 +2236,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W19-1a",
+    "topic": "Beta & Gamma Functions",
+
     "unit": 1,
     "source": "Winter 2019",
     "marks": "03",
@@ -2212,6 +2298,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W19-2b-OR",
+    "topic": "Improper Integrals",
+
     "unit": 1,
     "source": "Winter 2019 OR",
     "marks": "04",
@@ -2224,6 +2312,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W19-2c-OR",
+    "topic": "Applications of Definite Integrals",
+
     "unit": 1,
     "source": "Winter 2019 OR",
     "marks": "07",
@@ -2236,6 +2326,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W19-2b",
+    "topic": "Indeterminate Forms & L'Hôpital's Rule",
+
     "unit": 2,
     "source": "Winter 2019",
     "marks": "04",
@@ -2248,6 +2340,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W19-3b",
+    "topic": "Taylor's & Maclaurin's Series",
+
     "unit": 2,
     "source": "Winter 2019",
     "marks": "04",
@@ -2452,6 +2546,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W20-1a",
+    "topic": "Improper Integrals",
+
     "unit": 1,
     "source": "Winter 2020",
     "marks": "03",
@@ -2500,6 +2596,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W20-1b",
+    "topic": "Applications of Definite Integrals",
+
     "unit": 1,
     "source": "Winter 2020",
     "marks": "04",
@@ -2536,6 +2634,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W20-2b-OR",
+    "topic": "Applications of Definite Integrals",
+
     "unit": 1,
     "source": "Winter 2020 OR",
     "marks": "05",
@@ -2548,6 +2648,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W20-5a",
+    "topic": "Taylor's & Maclaurin's Series",
+
     "unit": 2,
     "source": "Winter 2020",
     "marks": "03",
@@ -2560,6 +2662,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W20-4b",
+    "topic": "Indeterminate Forms & L'Hôpital's Rule",
+
     "unit": 2,
     "source": "Winter 2020",
     "marks": "04",
@@ -2776,6 +2880,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W21-2a-OR",
+    "topic": "Improper Integrals",
+
     "unit": 1,
     "source": "Winter 2021 OR",
     "marks": "03",
@@ -2800,6 +2906,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W21-2c-OR",
+    "topic": "Applications of Definite Integrals",
+
     "unit": 1,
     "source": "Winter 2021 OR",
     "marks": "07",
@@ -2824,6 +2932,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W21-2b",
+    "topic": "Indeterminate Forms & L'Hôpital's Rule",
+
     "unit": 2,
     "source": "Winter 2021",
     "marks": "04",
@@ -2836,6 +2946,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W21-3b",
+    "topic": "Taylor's & Maclaurin's Series",
+
     "unit": 2,
     "source": "Winter 2021",
     "marks": "04",
@@ -2848,6 +2960,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W21-4b",
+    "topic": "Taylor's & Maclaurin's Series",
+
     "unit": 2,
     "source": "Winter 2021",
     "marks": "04",
@@ -3064,6 +3178,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W22-1c",
+    "topic": "Applications of Definite Integrals",
+
     "unit": 1,
     "source": "Winter 2022",
     "marks": "07",
@@ -3088,6 +3204,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W22-2b-OR",
+    "topic": "Improper Integrals",
+
     "unit": 1,
     "source": "Winter 2022 OR",
     "marks": "04",
@@ -3124,6 +3242,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W22-2a",
+    "topic": "Indeterminate Forms & L'Hôpital's Rule",
+
     "unit": 2,
     "source": "Winter 2022",
     "marks": "03",
@@ -3136,6 +3256,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W22-4b-OR",
+    "topic": "Taylor's & Maclaurin's Series",
+
     "unit": 2,
     "source": "Winter 2022 OR",
     "marks": "04",
@@ -3352,6 +3474,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W23-1b",
+    "topic": "Beta & Gamma Functions",
+
     "unit": 1,
     "source": "Winter 2023",
     "marks": "04",
@@ -3388,6 +3512,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W23-2b-OR",
+    "topic": "Applications of Definite Integrals",
+
     "unit": 1,
     "source": "Winter 2023 OR",
     "marks": "04",
@@ -3400,6 +3526,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W23-2a",
+    "topic": "Indeterminate Forms & L'Hôpital's Rule",
+
     "unit": 2,
     "source": "Winter 2023",
     "marks": "03",
@@ -3412,6 +3540,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W23-3a",
+    "topic": "Taylor's & Maclaurin's Series",
+
     "unit": 2,
     "source": "Winter 2023",
     "marks": "03",
@@ -3640,6 +3770,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W24-1a",
+    "topic": "Beta & Gamma Functions",
+
     "unit": 1,
     "source": "Winter 2024",
     "marks": "03",
@@ -3652,6 +3784,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W24-1b",
+    "topic": "Improper Integrals",
+
     "unit": 1,
     "source": "Winter 2024",
     "marks": "04",
@@ -3664,6 +3798,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W24-1c",
+    "topic": "Applications of Definite Integrals",
+
     "unit": 1,
     "source": "Winter 2024",
     "marks": "07",
@@ -3676,6 +3812,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W24-2c-OR",
+    "topic": "Applications of Definite Integrals",
+
     "unit": 1,
     "source": "Winter 2024 OR",
     "marks": "07",
@@ -3688,6 +3826,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W24-2a",
+    "topic": "Indeterminate Forms & L'Hôpital's Rule",
+
     "unit": 2,
     "source": "Winter 2024",
     "marks": "03",
@@ -3700,6 +3840,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W24-2b",
+    "topic": "Extreme Values",
+
     "unit": 2,
     "source": "Winter 2024",
     "marks": "04",
@@ -3712,6 +3854,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W24-2c",
+    "topic": "Taylor's & Maclaurin's Series",
+
     "unit": 2,
     "source": "Winter 2024",
     "marks": "07",
@@ -3940,6 +4084,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W25-1a",
+    "topic": "Improper Integrals",
+
     "unit": 1,
     "source": "Winter 2025",
     "marks": "03",
@@ -3952,6 +4098,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W25-2a",
+    "topic": "Beta & Gamma Functions",
+
     "unit": 1,
     "source": "Winter 2025",
     "marks": "03",
@@ -3964,6 +4112,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W25-1b",
+    "topic": "Beta & Gamma Functions",
+
     "unit": 1,
     "source": "Winter 2025",
     "marks": "04",
@@ -3976,6 +4126,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W25-2b",
+    "topic": "Applications of Definite Integrals",
+
     "unit": 1,
     "source": "Winter 2025",
     "marks": "04",
@@ -3988,6 +4140,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W25-2b-OR",
+    "topic": "Applications of Definite Integrals",
+
     "unit": 1,
     "source": "Winter 2025 OR",
     "marks": "04",
@@ -4000,6 +4154,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W25-3a",
+    "topic": "Indeterminate Forms & L'Hôpital's Rule",
+
     "unit": 2,
     "source": "Winter 2025",
     "marks": "03",
@@ -4012,6 +4168,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W25-3b",
+    "topic": "Extreme Values",
+
     "unit": 2,
     "source": "Winter 2025",
     "marks": "04",
@@ -4024,6 +4182,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W25-1c",
+    "topic": "Taylor's & Maclaurin's Series",
+
     "unit": 2,
     "source": "Winter 2025",
     "marks": "07",
@@ -4036,6 +4196,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W25-2a-OR",
+    "topic": "Indeterminate Forms & L'Hôpital's Rule",
+
     "unit": 2,
     "source": "Winter 2025 OR",
     "marks": "03",
@@ -4240,6 +4402,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W25-1a-2",
+    "topic": "Improper Integrals",
+
     "unit": 1,
     "source": "Winter 2025 (Jan 2026)",
     "marks": "03",
@@ -4264,6 +4428,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W25-1b-2",
+    "topic": "Applications of Definite Integrals",
+
     "unit": 1,
     "source": "Winter 2025 (Jan 2026)",
     "marks": "04",
@@ -4312,6 +4478,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W25-3a-2",
+    "topic": "Indeterminate Forms & L'Hôpital's Rule",
+
     "unit": 2,
     "source": "Winter 2025 (Jan 2026)",
     "marks": "03",
@@ -4324,6 +4492,8 @@ export const M1_QUESTIONS = [
   },
   {
     "id": "m1-W25-2b-2",
+    "topic": "Taylor's & Maclaurin's Series",
+
     "unit": 2,
     "source": "Winter 2025 (Jan 2026)",
     "marks": "04",

@@ -34,11 +34,13 @@ body {
   overflow-x: hidden;
 }
 .wrap {
-  max-width: 560px;
+  width: 100%;
+  max-width: 1240px;
   margin: 0 auto;
   min-height: 100vh;
   background: var(--bg);
   overflow-x: hidden;
+  box-shadow: 0 0 48px rgba(0, 0, 0, 0.05);
 }
 
 /* ---------- Header ---------- */
@@ -294,12 +296,25 @@ body {
   color: var(--sub);
 }
 
-/* ---------- Question cards ---------- */
 .q-list {
-  padding: 0 22px 60px;
+  padding: 0 18px 60px;
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+@media (min-width: 768px) {
+  .q-list {
+    padding: 0 28px 70px;
+    gap: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  .q-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(520px, 1fr));
+    gap: 20px;
+    padding: 0 36px 90px;
+  }
 }
 .q-card {
   background: var(--card);

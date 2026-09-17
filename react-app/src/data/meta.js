@@ -1,7 +1,10 @@
 // GTU Mathematics — Subject & Unit Metadata
-export const META = {
+export const BASE_META = {
   m1: {
     name: "Mathematics 1",
+    shortName: "Maths 1",
+    semester: 1,
+    code: "BE01R00041 / 3110014",
     eyebrow: "GTU  ·  SEMESTER I  ·  SUBJECT CODE: BE01R00041 (w.e.f. 2025-26) / 3110014, 110008 (earlier)",
     units: {
       1: {
@@ -38,6 +41,9 @@ export const META = {
   },
   m2: {
     name: "Mathematics 2",
+    shortName: "Maths 2",
+    semester: 2,
+    code: "BE02R00011 / 3110015",
     eyebrow: "GTU  ·  SEMESTER II  ·  SUBJECT CODE: BE02R00011 (w.e.f. 2025-26) / 3110015 (earlier)",
     units: {
       1: {
@@ -74,6 +80,9 @@ export const META = {
   },
   ps: {
     name: "Probability & Statistics",
+    shortName: "P & S",
+    semester: 3,
+    code: "3130006 / BE03000251",
     eyebrow: "GTU  ·  SEMESTER III / IV  ·  SUBJECT CODE: 3130006 / BE03000251",
     units: {
       1: {
@@ -110,6 +119,9 @@ export const META = {
   },
   dm: {
     name: "Discrete Mathematics",
+    shortName: "Discrete Maths",
+    semester: 4,
+    code: "BE04000261 / 3140708",
     eyebrow: "GTU  ·  SEMESTER IV  ·  SUBJECT CODE: BE04000261 / 3140708",
     units: {
       1: {
@@ -145,3 +157,37 @@ export const META = {
     },
   },
 };
+
+export const META = BASE_META;
+
+export const SEMESTERS = [
+  { id: 1, label: "Semester 1", short: "Sem 1" },
+  { id: 2, label: "Semester 2", short: "Sem 2" },
+  { id: 3, label: "Semester 3", short: "Sem 3" },
+  { id: 4, label: "Semester 4", short: "Sem 4" },
+  { id: 5, label: "Semester 5", short: "Sem 5" },
+  { id: 6, label: "Semester 6", short: "Sem 6" },
+  { id: 7, label: "Semester 7", short: "Sem 7" },
+  { id: 8, label: "Semester 8", short: "Sem 8" },
+];
+
+const STORAGE_KEY = "gtu:custom_subjects";
+
+export function loadCustomSubjects() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return {};
+    return JSON.parse(raw);
+  } catch {
+    return {};
+  }
+}
+
+export function saveCustomSubjects(customSubjects) {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(customSubjects));
+  } catch {
+    // ignore
+  }
+}
+

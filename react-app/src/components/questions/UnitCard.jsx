@@ -1,4 +1,4 @@
-import { META } from "../../data/meta.js";
+import { BASE_META } from "../../data/meta.js";
 import { DATA } from "../../data/questions.js";
 
 const MARKS_COLORS = [
@@ -9,9 +9,17 @@ const MARKS_COLORS = [
   { bg: "#FBE4EA", color: "#a13a5c" },
 ];
 
-export default function UnitCard({ subject, unit }) {
-  const info = META[subject].units[unit];
-  const all = DATA[subject].filter((q) => q.unit === unit);
+export default function UnitCard({ subject, unit, allMeta, customQuestions }) {
+  const metaMap = allMeta || BASE_META;
+  const currentSub = metaMap[subject] || BASE_META[subject] || {};
+  const info = currentSub.units?.[unit] || {
+    title: `Unit ${unit}`,
+    icon: "📘",
+    desc: "Questions and exam topics for this syllabus unit.",
+  };
+
+  const subjectQuestions = DATA[subject] || customQuestions?.[subject] || [];
+  const all = subjectQuestions.filter((q) => q.unit === unit);
   const summerCount = all.filter((q) => q.season === "Summer").length;
   const winterCount = all.filter((q) => q.season === "Winter").length;
 
@@ -24,7 +32,7 @@ export default function UnitCard({ subject, unit }) {
     .sort((a, b) => a - b);
 
   return (
-    <div className="unit-card" style={{ background: `var(--u${unit}-bg)`, color: `var(--u${unit}-fg)` }}>
+    <div className="unit-card" style={{ background: `var(--u${unit}-bg, #eef2f6)`, color: `var(--u${unit}-fg, #1e293b)` }}>
       <div className="row">
         <div className="unit-icon">{info.icon}</div>
         <div>
@@ -36,21 +44,23 @@ export default function UnitCard({ subject, unit }) {
         <span className="chip">☀️ {summerCount} Summer</span>
         <span className="chip">❄️ {winterCount} Winter</span>
       </div>
-      <div className="chip-row">
-        {marksKeys.map((k, i) => {
-          const c = MARKS_COLORS[i % MARKS_COLORS.length];
-          return (
-            <span
-              key={k}
-              className="chip"
-              style={{ background: c.bg, color: c.color }}
-            >
-              {marksCounts[k]} × {k}M
-            </span>
-          );
-        })}
-      </div>
-      <span className="chip total">Total: {all.length}</span>
+      {marksKeys.length > 0 && (
+        <div className="chip-row">
+          {marksKeys.map((k, i) => {
+            const c = MARKS_COLORS[i % MARKS_COLORS.length];
+            return (
+              <span
+                key={k}
+                className="chip"
+                style={{ background: c.bg, color: c.color }}
+              >
+                {marksCounts[k]} × {k}M
+              </span>
+            );
+          })}
+        </div>
+      )}
+      <span className="chip total">Total in Unit: {all.length}</span>
     </div>
   );
 }

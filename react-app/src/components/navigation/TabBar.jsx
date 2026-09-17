@@ -1,7 +1,7 @@
 import { useRef, useEffect, useCallback } from "react";
-import { META } from "../../data/meta.js";
+import { BASE_META } from "../../data/meta.js";
 
-export default function TabBar({ subject, unit, onUnitChange }) {
+export default function TabBar({ subject, unit, onUnitChange, allMeta }) {
   const tabbarRef = useRef(null);
   const thumbRef = useRef(null);
 
@@ -27,13 +27,15 @@ export default function TabBar({ subject, unit, onUnitChange }) {
     };
   }, [subject, updateScrollThumb]);
 
-  const units = META[subject].units;
+  const metaMap = allMeta || BASE_META;
+  const currentSubjectMeta = metaMap[subject] || BASE_META[subject] || {};
+  const units = currentSubjectMeta.units || {};
 
   return (
     <div className="tabbar-wrap">
       <div className="tabbar" ref={tabbarRef} role="tablist" aria-label="Select Unit">
         {Object.keys(units).map((uStr) => {
-          const u = parseInt(uStr);
+          const u = parseInt(uStr, 10);
           return (
             <button
               key={u}
@@ -43,7 +45,7 @@ export default function TabBar({ subject, unit, onUnitChange }) {
               onClick={() => onUnitChange(u)}
               id={`unit-tab-${u}`}
             >
-              {units[u].icon} U{u}
+              {units[u].icon || "📘"} U{u}
             </button>
           );
         })}

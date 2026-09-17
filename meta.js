@@ -4,6 +4,8 @@
 const META = {
   "m1": {
     "name": "Mathematics 1",
+    "shortName": "Maths 1",
+    "semester": 1,
     "eyebrow": "GTU  ·  SEMESTER I  ·  SUBJECT CODE: BE01R00041 (w.e.f. 2025-26) / 3110014, 110008 (earlier)",
     "units": {
       "1": {
@@ -40,6 +42,8 @@ const META = {
   },
   "m2": {
     "name": "Mathematics 2",
+    "shortName": "Maths 2",
+    "semester": 2,
     "eyebrow": "GTU  ·  SEMESTER II  ·  SUBJECT CODE: BE02R00011 (w.e.f. 2025-26) / 3110015 (earlier)",
     "units": {
       "1": {
@@ -76,6 +80,8 @@ const META = {
   },
   "ps": {
     "name": "Probability & Statistics",
+    "shortName": "P & S",
+    "semester": 3,
     "eyebrow": "GTU  ·  SEMESTER III / IV  ·  SUBJECT CODE: 3130006 / BE03000251",
     "units": {
       "1": {
@@ -112,6 +118,8 @@ const META = {
   },
   "dm": {
     "name": "Discrete Mathematics",
+    "shortName": "Discrete Maths",
+    "semester": 4,
     "eyebrow": "GTU  ·  SEMESTER IV  ·  SUBJECT CODE: BE04000261 / 3140708",
     "units": {
       "1": {
