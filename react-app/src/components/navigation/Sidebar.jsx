@@ -17,10 +17,10 @@ export default function Sidebar({
   const [expandedSemesters, setExpandedSemesters] = useState({ 1: true, 2: true, 3: true, 4: true });
   const searchInputRef = useRef(null);
 
-  const handleClose = () => {
+  const handleClose = useCallback(() => {
     setGlobalSearch("");
     onClose();
-  };
+  }, [onClose]);
 
   // Focus search input when sidebar opens
   useEffect(() => {
@@ -36,12 +36,12 @@ export default function Sidebar({
   useEffect(() => {
     function handleKeyDown(e) {
       if (e.key === "Escape" && isOpen) {
-        onClose();
+        handleClose();
       }
     }
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isOpen, onClose]);
+  }, [isOpen, handleClose]);
 
   // Group all subjects by semester
   const subjectsBySemester = useMemo(() => {
@@ -288,8 +288,8 @@ export default function Sidebar({
             type="button"
             className="footer-btn secondary"
             onClick={() => {
+              setGlobalSearch("");
               onViewBookmarks();
-              onClose();
             }}
           >
             <span>⭐</span> Saved Questions ({savedCount})
