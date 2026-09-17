@@ -27,6 +27,24 @@ const TOPIC_ORDER = [
   "Indeterminate Forms & L'Hôpital's Rule",
   "Taylor's & Maclaurin's Series",
   "Extreme Values",
+  // Unit 3
+  "Sequences & Convergence",
+  "Tests for Convergence",
+  "Alternating Series",
+  "Power Series & Radius of Convergence",
+  // Unit 4
+  "Limits & Continuity",
+  "Partial Derivatives & Chain Rule",
+  "Gradient & Directional Derivatives",
+  "Tangent Plane & Normal Line",
+  "Extreme Values & Lagrange Multipliers",
+  // Unit 5
+  "Double Integrals",
+  "Change of Order of Integration",
+  "Polar Coordinates",
+  "Change of Variables (Jacobian)",
+  "Areas & Volumes",
+  "Triple Integrals",
 ];
 
 export default function QuestionList({
