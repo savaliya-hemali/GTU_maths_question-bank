@@ -149,23 +149,6 @@ export default function Sidebar({
               </button>
             )}
           </div>
-
-          {/* Quick search chips */}
-          {!globalSearch && (
-            <div className="quick-search-chips">
-              <span className="chips-label">Popular:</span>
-              {["Taylor", "Cauchy", "Bayes", "Matrix", "Lattices", "Poisson", "ODE"].map((kw) => (
-                <button
-                  key={kw}
-                  type="button"
-                  className="quick-chip"
-                  onClick={() => setGlobalSearch(kw)}
-                >
-                  {kw}
-                </button>
-              ))}
-            </div>
-          )}
         </div>
 
         {/* Drawer Content: Either Global Search Results or Semester Tree */}

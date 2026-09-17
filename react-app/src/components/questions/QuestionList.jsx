@@ -23,6 +23,7 @@ const TOPIC_ORDER = [
   "Improper Integrals",
   "Beta & Gamma Functions",
   "Applications of Definite Integrals",
+  "Matrices",
   // Unit 2
   "Indeterminate Forms & L'Hôpital's Rule",
   "Taylor's & Maclaurin's Series",
@@ -32,6 +33,7 @@ const TOPIC_ORDER = [
   "Tests for Convergence",
   "Alternating Series",
   "Power Series & Radius of Convergence",
+  "Fourier Series",
   // Unit 4
   "Limits & Continuity",
   "Partial Derivatives & Chain Rule",
