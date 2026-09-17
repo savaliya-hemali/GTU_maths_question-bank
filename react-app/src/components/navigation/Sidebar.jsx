@@ -110,7 +110,7 @@ export default function Sidebar({
             <span className="sidebar-logo">🎓</span>
             <div>
               <h2 className="sidebar-title">GTU Question Bank</h2>
-              <span className="sidebar-subtitle">Engineering Mathematics</span>
+              <span className="sidebar-subtitle">Bachelor of Engineering (IT/COM)</span>
             </div>
           </div>
           <button

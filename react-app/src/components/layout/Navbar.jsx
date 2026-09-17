@@ -25,7 +25,7 @@ export default function Navbar({
           <div className="navbar-brand">
             <span className="brand-logo" aria-hidden="true">📐</span>
             <div className="brand-text">
-              <span className="brand-title">GTU Maths</span>
+              <span className="brand-title">GTU Question Bank</span>
               {activeSubjectMeta && (
                 <span className="brand-semester-badge">
                   Sem {activeSubjectMeta.semester} · {activeSubjectMeta.shortName || activeSubjectMeta.name}

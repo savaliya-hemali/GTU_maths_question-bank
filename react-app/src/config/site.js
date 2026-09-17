@@ -9,8 +9,8 @@
  */
 
 export const SITE_CONFIG = {
-  name: "GTU Mathematics Question Bank",
-  shortName: "GTU Maths QB",
+  name: "GTU Question Bank",
+  shortName: "GTU Question Bank",
   description:
     "Free GTU previous year exam questions for Mathematics 1, Mathematics 2, Probability & Statistics, and Discrete Mathematics. Searchable, filterable question bank with exam session filters.",
   // Production base URL (no trailing slash)
